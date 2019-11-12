@@ -33,7 +33,9 @@ RUN set -eux; \
                 pdo_mysql \
                 sockets \
                 zip \
-        ;
+        ; \
+        pecl install redis; \
+        docker-php-ext-enable redis
 
 RUN set -eux; \
         \
