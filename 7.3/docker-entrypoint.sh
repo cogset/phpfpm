@@ -7,5 +7,6 @@ if [ "${1#-}" != "$1" ]; then
 fi
 
 service cron start
+service supervisor start
 
 exec "$@"
