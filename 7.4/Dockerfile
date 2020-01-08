@@ -23,9 +23,9 @@ RUN set -eux; \
 RUN set -eux; \
         \
         docker-php-ext-configure gd \
-                --with-freetype-dir=/usr/include/ \
-                --with-jpeg-dir=/usr/include/ \
-                --with-webp-dir=/usr/include/ \
+                --with-freetype \
+                --with-jpeg \
+                --with-webp \
         ; \
         docker-php-ext-install \
                 gd \
